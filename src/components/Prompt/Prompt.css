@@ -1,0 +1,42 @@
+.subtitle {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.submit {
+  padding: 12px 16px;
+  margin-left: auto;
+
+  width: 96px;
+}
+
+.prompt-area {
+  width: 360px;
+  min-height: 360px;
+  height: calc(100% - 96px);
+
+  border: 1px solid gray;
+  border-radius: 2.4px;
+  padding: 32px 24px;
+  gap: 18px;
+
+  text-align: left;
+}
+
+.options-container {
+  gap: 4px;
+  margin-left: auto;
+}
+
+.engine-dropdown {
+  padding: 4px;
+}
+
+.temperature-container {
+  border: 1px solid gray;
+  border-radius: 2.4px;
+
+  width: 48px;
+  padding: 4px 0;
+  margin-left: 8px;
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+textarea {
+  font-size: 14px;
+  line-height: 28px;
+
+  height: 200px;
+  min-height: 100px;
+  max-height: 300px;
+  resize: vertical;
+  outline: none;
+
+  border: 1px solid gray;
+  border-radius: 2.4px;
+
+  padding: 18px 14px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #D1D1D1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.reverse {
+  flex-direction: column-reverse;
+}
+
+.container {
+  height: inherit;
+}
+
+.shadow {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
