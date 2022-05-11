@@ -1,15 +1,15 @@
 .timeline-area {
-  width: 500px;
-  min-height: 360px;
-  height: calc(100% - 96px);
+  width: 360px;
+  min-height: 500px;
+  height: calc(100vh - 66px);
 
+  background-color: white;
   border: 1px solid gray;
   border-radius: 2.4px;
   padding: 32px 24px;
   gap: 18px;
 
   text-align: left;
-  margin-right: 8px;
 }
 
 #event-area {
@@ -18,9 +18,10 @@
 }
 
 .event-container {
+  position: relative;
   border: 1px solid gray;
   border-radius: 2.4px;
-  border-left: 4px solid gray;
+  border-left: 4px solid rgba(20, 20, 20, 0.95);
   background-color: white;
 
   padding: 16px;
@@ -30,4 +31,14 @@
 .event-subtitle {
   font-size: 13px;
   line-height: 24px;
+  margin-right: 24px;
+}
+
+.event-delete {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+
+  color: rgba(20, 20, 20, 0.95);
+  cursor: pointer;
 }

@@ -6,8 +6,8 @@ const CLEAR_RESPONSE = 'CLEAR_RESPONSE';
 
 const initial_state = {
   prompt: null,
-  engine: 'text-curie-001',
   response: null,
+  engine: 'text-curie-001',
   temperature: 0.5,
 };
 

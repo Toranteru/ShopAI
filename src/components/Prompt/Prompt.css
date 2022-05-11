@@ -11,10 +11,11 @@
 }
 
 .prompt-area {
-  width: 360px;
-  min-height: 360px;
-  height: calc(100% - 96px);
-
+  min-width: 360px;
+  max-width: 360px;
+  height: calc(100vh - 66px);
+  
+  background-color: white;
   border: 1px solid gray;
   border-radius: 2.4px;
   padding: 32px 24px;
@@ -30,6 +31,7 @@
 
 .engine-dropdown {
   padding: 4px;
+  width: 160px;
 }
 
 .temperature-container {

@@ -6,9 +6,8 @@ export default function Prompt() {
   const dispatch = useDispatch();
   const { prompt, engine, temperature } = useSelector(state => state.promptSlice);
 
-  function renderEngineOptions() {
-    let engineOptions = ['text-curie-001', 'text-babbage-001', 'text-ada-001'];
-    let items = engineOptions.map((engineOption) => <option key={engineOption} value={engineOption}>{engineOption}</option>);
+  function renderOptions(options) {
+    let items = options.map((optionKey) => <option key={optionKey} value={optionKey}>{optionKey}</option>);
     return items;
   }
 
@@ -23,7 +22,7 @@ export default function Prompt() {
             id='engine' name='engine' className='engine-dropdown' 
             onChange={(e) => dispatch({ type: 'UPDATE_ENGINE', payload: e.target.value })}
           >
-            {renderEngineOptions()}
+            {renderOptions(['text-curie-001', 'text-babbage-001', 'text-ada-001'])}
           </select>
         </div>
         <div className='flex row center options-container'>

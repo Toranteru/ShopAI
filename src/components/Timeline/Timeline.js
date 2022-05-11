@@ -30,9 +30,12 @@ export default function Timeline() {
       <h2 className='title'>Timeline</h2>
       <div id='event-area' className='flex reverse'>
         {timeline.length > 0 ? timeline.map((event, index) => (
-          <div key={index} className='event-container'>
+          <div key={index} index={index} className='event-container'>
             <p className='event-subtitle'><b>&gt; Prompt:</b>   {event.prompt}</p>
             <p className='event-subtitle'><b>&gt; Response:</b> {event.response}</p>
+            <i className='event-delete fa-solid fa-trash fa-width' onClick={() => {
+              setTimeline([...timeline].filter((el, i) => i !== index));
+            }}></i>
           </div>
         )) : <p className='subtitle'>There are currently no prompts stored in the timeline!</p>}
       </div>

@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className='app'>
-      <div className='flex center container'>
+      <div className='flex center container wrapper'>
         <Timeline />
         <Prompt />
       </div>
