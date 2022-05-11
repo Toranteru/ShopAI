@@ -1,6 +1,7 @@
 .timeline-area {
   width: 360px;
   min-height: 500px;
+  min-height: 400px;
   height: calc(100vh - 66px);
 
   background-color: white;
